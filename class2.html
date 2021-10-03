@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Class 2</h1>
+    <h2 id="p1">Para 1</h2>
+    <h2 id="p2">Para 2</h2>
+    <ul>
+        <li>document.getElementById</li>
+        <li>document.getElementByClassName</li>
+        <li>document.getElementByTagName</li>
+    </ul>
+
+    <p id="num1">3</p>
+    <p id="num2">5</p>
+
+    <p id="sum"></p>
+    <p id="sub"></p>
+    <p id="mul"></p>
+    <p id="div"></p>
+
+    <script>
+        var a = document.getElementById("p1");
+        var b = document.getElementById("p2");
+        a.style.backgroundColor = 'red'
+        // h1 = h1.textContent
+        // console.log(h1.textContent)
+        // console.log(h2);
+
+        var num1 = document.getElementById('num1');
+        var num2 = document.getElementById('num2');
+
+        console.log(parseInt(num1.textContent) + parseInt(num2.textContent));
+        console.log(num1.textContent - num2.textContent);
+        console.log(num1.textContent * num2.textContent);
+        console.log(num1.textContent / num2.textContent);
+
+        var c = 3
+        var d = 4
+        console.log(c + d)
+
+2
+        var sum = document.getElementById("sum");
+        var sub = document.getElementById("sub");
+        var mul = document.getElementById("mul");
+        var div = document.getElementById("div");
+
+        sum.textContent = "Addition : " + String(parseInt(num1.textContent) + parseInt(num2.textContent));
+        sub.textContent = "Subtraction : " + String(num1.textContent - num2.textContent);
+        mul.textContent = "Multiplication : " + num1.textContent * num2.textContent;
+        div.textContent = "Division : " + num1.textContent / num2.textContent;
+    </script>
+</body>
+</html>
+
+
+1. create two elements as p tag
+2. give them ids, and values, 3, 5
+3. retrieve text content using Javascript
+4. apply math expressions such as +, -, *, /
+
+
+
+
+
+
+
+
